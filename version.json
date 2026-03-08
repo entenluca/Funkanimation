@@ -1,8 +1,9 @@
 {
-    "version": "1.0.1",
+    "version": "1.0.2",
     "download": "https://portal.cfx.re/assets/granted-assets",
     "changelog": [
-        "Feature: Command Beschreibungen hinzugefügt"
+        "Feature: Command Beschreibungen hinzugefügt",
+        "Feature: Discord Webhook hinzugefügt"
     ],
     "files": [
         "data/version.lua",
