@@ -1,5 +1,5 @@
 {
-    "version": "1.0.0",
+    "version": "1.0.5",
     "download": "https://portal.cfx.re/assets/granted-assets",
     "changelog": [
         "Bugfix: Version Checker hinzugefügt",
