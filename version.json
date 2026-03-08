@@ -1,8 +1,12 @@
 {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "download": "https://portal.cfx.re/assets/granted-assets",
     "changelog": [
-        "Initiales Release"
+        "Bugfix: Version Checker hinzugefügt",
+        "Neues Feature XYZ"
     ],
-    "files": []
+    "files": [
+        "data/version.lua",
+        "server.lua"
+    ]
 }
