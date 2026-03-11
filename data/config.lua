@@ -18,8 +18,6 @@ config.adminAce       = "funkanimation.admin"
 -- Modus: "auto" oder "manual"
 config.defaultMode = "auto"
 
-config.defaultMode = "auto"
-
 -- Kleidungs-Komponenten
 config.checkComponents = { 11, 8, 5 }
 
