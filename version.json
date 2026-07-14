@@ -1,16 +1,11 @@
 {
-    "version": "1.1.1",
+    "version": "1.1.2",
     "download": "https://portal.cfx.re/assets/granted-assets",
     "changelog": [
-        "Change: X-Schließen-Button entfernt",
-        "Feature: UI-Theme in config.lua wählbar (default / yellow)"
+        "Change: Funkstatus-Icon zu Walkie-Talkie geändert"
     ],
     "files": [
-        "data/config.lua",
-        "client/main.lua",
         "html/index.html",
-        "html/style.css",
-        "html/script.js",
         "fxmanifest.lua",
         "data/version.lua"
     ]
