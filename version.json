@@ -1,15 +1,11 @@
 {
-    "version": "1.0.7",
+    "version": "1.0.8",
     "download": "https://portal.cfx.re/assets/granted-assets",
     "changelog": [
-        "Fix: Flackern beim Auswählen einer Animation behoben"
+        "Change: Discord Webhook entfernt"
     ],
     "files": [
-        "data/config.lua",
         "data/version.lua",
-        "html/index.html",
-        "html/style.css",
-        "html/script.js",
         "fxmanifest.lua"
     ]
 }
