@@ -1,9 +1,9 @@
 fx_version "cerulean"
 game "gta5"
 lua54 "yes"
-author 'Luis-Werkstatt™️'
-description 'Funkanimation für pma-voice [/funkani] | Custom UI'
-version '1.0.9'
+author 'NoWave'
+description 'Funkanimation für pma-voice [/funkani] | made by NoWave'
+version '1.1.0'
 
 ui_page "html/index.html"
 

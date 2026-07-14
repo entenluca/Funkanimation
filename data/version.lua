@@ -1,4 +1,4 @@
-local CURRENT_VERSION = "1.0.9"
+local CURRENT_VERSION = "1.1.0"
 local VERSION_URL     = "https://raw.githubusercontent.com/pfuschbyluis/FunkanimationV2/main/version.json"
 
 local BANNER = {
