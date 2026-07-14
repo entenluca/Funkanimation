@@ -15,7 +15,7 @@ config.useEvent     = true
 config.menuCommand = "funkani"
 config.keybind     = "F9"
 
--- UI Theme: "default" (Blau) oder "yellow" (Dezentes Warmgrau-Gelb)
+-- UI Theme: "default" (Blau) oder "yellow" (Gelb-Akzente auf gleichem Dunkelgrau)
 config.uiTheme = "default"
 
 -- ═══════════════════════════════════════════════════════════════

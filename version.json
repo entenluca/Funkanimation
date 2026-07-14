@@ -1,14 +1,12 @@
 {
-    "version": "1.1.7",
+    "version": "1.1.8",
     "download": "https://portal.cfx.re/assets/granted-assets",
     "changelog": [
-        "Fix: Icons und Texte besser sichtbar (feste Hintergründe, höherer Kontrast)",
-        "Fix: FiveM-Transparenz-Probleme behoben"
+        "Fix: Yellow-Theme ohne Brauntöne – neutrales Grau mit Gelb-Akzenten"
     ],
     "files": [
-        "html/index.html",
         "html/style.css",
-        "html/script.js",
+        "data/config.lua",
         "fxmanifest.lua",
         "data/version.lua"
     ]

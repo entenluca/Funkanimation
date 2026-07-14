@@ -3,7 +3,7 @@ game "gta5"
 lua54 "yes"
 author 'NoWave'
 description 'Funkanimation für pma-voice [/funkani] | made by NoWave'
-version '1.1.7'
+version '1.1.8'
 
 ui_page "html/index.html"
 

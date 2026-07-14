@@ -38,23 +38,23 @@ body.theme-default {
 }
 
 body.theme-yellow {
-    --panel-bg: #141416;
-    --panel-border: #2e2e32;
-    --card-bg: #1c1c1f;
-    --card-bg-hover: #242428;
-    --card-bg-selected: #252318;
-    --accent: #a89a5c;
-    --accent-soft: #c4b87a;
-    --accent-border: #7a7040;
-    --icon: #e4e4e7;
-    --icon-muted: #a1a1aa;
+    --panel-bg: #12151c;
+    --panel-border: #2a3142;
+    --card-bg: #1a1f2b;
+    --card-bg-hover: #222836;
+    --card-bg-selected: #1f2430;
+    --accent: #d4c94a;
+    --accent-soft: #e2d96a;
+    --accent-border: #8f8230;
+    --icon: #c8d3e8;
+    --icon-muted: #8b9bb5;
     --success: #34d399;
     --success-bg: #152820;
     --success-border: #1f6b50;
-    --text-primary: #f4f4f5;
-    --text-secondary: #a1a1aa;
-    --text-muted: #71717a;
-    --shadow: 0 16px 40px rgba(0, 0, 0, 0.7);
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    --shadow: 0 16px 40px rgba(0, 0, 0, 0.65);
 }
 
 body {
