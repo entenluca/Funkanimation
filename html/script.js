@@ -1,7 +1,6 @@
 const app = document.getElementById('app');
 const animationList = document.getElementById('animation-list');
 const radioStatus = document.getElementById('radio-status');
-const radioDot = document.getElementById('radio-dot');
 const statusRadio = document.getElementById('status-radio');
 const activeEmote = document.getElementById('active-emote');
 

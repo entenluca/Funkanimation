@@ -1,14 +1,14 @@
 {
-    "version": "1.1.6",
+    "version": "1.1.7",
     "download": "https://portal.cfx.re/assets/granted-assets",
     "changelog": [
-        "Change: UI komplett überarbeitet – cleanes Design ohne Glow-Effekte",
-        "Fix: Yellow-Theme dezenter, kein grelles Gold mehr"
+        "Fix: Icons und Texte besser sichtbar (feste Hintergründe, höherer Kontrast)",
+        "Fix: FiveM-Transparenz-Probleme behoben"
     ],
     "files": [
         "html/index.html",
         "html/style.css",
-        "data/config.lua",
+        "html/script.js",
         "fxmanifest.lua",
         "data/version.lua"
     ]
