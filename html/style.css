@@ -15,7 +15,6 @@ body {
 
 :root,
 body.theme-default {
-    --bg-overlay: rgba(6, 10, 18, 0.55);
     --panel-bg: rgba(14, 18, 28, 0.96);
     --panel-border: rgba(255, 255, 255, 0.09);
     --panel-inner: rgba(255, 255, 255, 0.03);

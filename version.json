@@ -1,10 +1,12 @@
 {
-    "version": "1.1.4",
+    "version": "1.1.5",
     "download": "https://portal.cfx.re/assets/granted-assets",
     "changelog": [
-        "Fix: Yellow UI-Theme überarbeitet – modernes Soft-Gelb statt Gold"
+        "Fix: Kein Bildschirm-Tint mehr um die UI (transparent)",
+        "Fix: Yellow-Theme gedämpfter mit besserem Kontrast"
     ],
     "files": [
+        "html/index.html",
         "html/style.css",
         "data/config.lua",
         "fxmanifest.lua",
