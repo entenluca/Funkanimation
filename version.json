@@ -1,12 +1,12 @@
 {
-    "version": "1.1.3",
+    "version": "1.1.4",
     "download": "https://portal.cfx.re/assets/granted-assets",
     "changelog": [
-        "Change: Automatische Kleidungs-Erkennung komplett entfernt"
+        "Fix: Yellow UI-Theme überarbeitet – modernes Soft-Gelb statt Gold"
     ],
     "files": [
+        "html/style.css",
         "data/config.lua",
-        "client/main.lua",
         "fxmanifest.lua",
         "data/version.lua"
     ]

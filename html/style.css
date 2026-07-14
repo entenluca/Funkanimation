@@ -35,20 +35,20 @@ body.theme-default {
 }
 
 body.theme-yellow {
-    --bg-overlay: rgba(28, 22, 8, 0.55);
-    --panel-bg: rgba(32, 26, 12, 0.96);
-    --panel-border: rgba(255, 220, 120, 0.14);
-    --panel-inner: rgba(255, 220, 120, 0.05);
-    --accent: #e8c547;
-    --accent-soft: #f0d875;
-    --accent-glow: rgba(232, 197, 71, 0.35);
-    --accent-bg: rgba(232, 197, 71, 0.14);
-    --success: #a3e635;
-    --success-glow: rgba(163, 230, 53, 0.35);
-    --text-primary: #fff8e7;
-    --text-secondary: #d4c9a8;
-    --text-muted: #9a8f6e;
-    --shadow: 0 32px 64px -16px rgba(0, 0, 0, 0.75);
+    --bg-overlay: rgba(8, 8, 10, 0.6);
+    --panel-bg: rgba(20, 20, 24, 0.97);
+    --panel-border: rgba(255, 255, 255, 0.08);
+    --panel-inner: rgba(255, 255, 255, 0.04);
+    --accent: #fef08a;
+    --accent-soft: #fef9c3;
+    --accent-glow: rgba(254, 240, 138, 0.22);
+    --accent-bg: rgba(254, 240, 138, 0.1);
+    --success: #86efac;
+    --success-glow: rgba(134, 239, 172, 0.3);
+    --text-primary: #fafafa;
+    --text-secondary: #a1a1aa;
+    --text-muted: #71717a;
+    --shadow: 0 32px 64px -16px rgba(0, 0, 0, 0.8);
 }
 
 body {
