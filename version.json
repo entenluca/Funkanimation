@@ -1,13 +1,16 @@
 {
-    "version": "1.0.2",
+    "version": "1.0.3",
     "download": "https://portal.cfx.re/assets/granted-assets",
     "changelog": [
-        "Feature: Command Beschreibungen hinzugefügt",
-        "Feature: Discord Webhook hinzugefügt"
+        "Change: Ingame-Adminpanel entfernt",
+        "Change: Kleidungs-Mappings werden jetzt in config.lua eingerichtet",
+        "Change: oxmysql-Abhängigkeit entfernt"
     ],
     "files": [
+        "data/config.lua",
         "data/version.lua",
-        "client.lua",
-        "fxmanifest.lua"
+        "client/main.lua",
+        "fxmanifest.lua",
+        "server/main.lua"
     ]
 }

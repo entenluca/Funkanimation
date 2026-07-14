@@ -1,0 +1,1 @@
+-- Server-Skript: Version-Check wird über data/version.lua ausgeführt.
