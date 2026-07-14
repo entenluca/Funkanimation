@@ -1,8 +1,8 @@
 {
-    "version": "1.0.6",
+    "version": "1.0.7",
     "download": "https://portal.cfx.re/assets/granted-assets",
     "changelog": [
-        "Fix: Schwarzer NUI-Hintergrund behoben (backdrop-filter entfernt, Transparenz korrigiert)"
+        "Fix: Flackern beim Auswählen einer Animation behoben"
     ],
     "files": [
         "data/config.lua",

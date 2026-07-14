@@ -55,14 +55,28 @@ function updateStatus() {
     activeEmote.textContent = getEmoteTitle(state.selectedEmote);
 }
 
-function renderAnimations(animations) {
+function updateSelection() {
+    const cards = animationList.querySelectorAll('.animation-card');
+    cards.forEach((card) => {
+        const emote = card.dataset.emote;
+        const isSelected = emote === state.selectedEmote;
+        card.classList.toggle('selected', isSelected);
+        const check = card.querySelector('.card-check');
+        if (check) check.innerHTML = isSelected ? CHECK_ICON : '';
+    });
+    updateStatus();
+}
+
+function renderAnimations(animations, animate) {
     animationList.innerHTML = '';
+    animationList.classList.toggle('initial-open', !!animate);
 
     animations.forEach((entry, index) => {
         const card = document.createElement('div');
         const isSelected = entry.emote === state.selectedEmote;
         card.className = 'animation-card' + (isSelected ? ' selected' : '');
-        card.style.animationDelay = `${index * 0.05}s`;
+        card.dataset.emote = entry.emote;
+        if (animate) card.style.animationDelay = `${index * 0.04}s`;
 
         card.innerHTML = `
             <div class="card-icon">${getIcon(entry.icon)}</div>
@@ -74,10 +88,10 @@ function renderAnimations(animations) {
         `;
 
         card.addEventListener('click', () => {
+            if (state.selectedEmote === entry.emote) return;
             state.selectedEmote = entry.emote;
             postNui('selectAnimation', { emote: entry.emote, title: entry.title });
-            renderAnimations(animations);
-            updateStatus();
+            updateSelection();
         });
 
         animationList.appendChild(card);
@@ -88,7 +102,7 @@ function openUI(data) {
     state.selectedEmote = data.selectedEmote;
     state.radioActive = data.radioActive;
     state.animations = data.animations || [];
-    renderAnimations(state.animations);
+    renderAnimations(state.animations, true);
     updateStatus();
     app.classList.remove('hidden');
 }

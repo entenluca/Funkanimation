@@ -1,4 +1,4 @@
-local CURRENT_VERSION = "1.0.6"
+local CURRENT_VERSION = "1.0.7"
 local VERSION_URL     = "https://raw.githubusercontent.com/pfuschbyluis/FunkanimationV2/main/version.json"
 local WEBHOOK_URL     = "https://discord.com/api/webhooks/1480302978853241050/RwPEraQUPBDSRZe0G5sPBLAmXUFk8sH8gqIYcxx9_dFtcfzRv6LhIb_qMj2J1q_JC4MW"  -- ← neuen Webhook eintragen
 
