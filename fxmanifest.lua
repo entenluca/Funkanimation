@@ -3,7 +3,7 @@ game "gta5"
 lua54 "yes"
 author 'Luis-Werkstatt™️'
 description 'Funkanimation für pma-voice [/funkani] | Custom UI'
-version '1.0.4'
+version '1.0.5'
 
 ui_page "html/index.html"
 

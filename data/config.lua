@@ -19,11 +19,12 @@ config.keybind     = "F9"
 --  Animations-Auswahl (Custom UI)
 -- ═══════════════════════════════════════════════════════════════
 
+-- icon = SVG-Icon-Name (wave, user, radio, headset) oder FontAwesome-Klasse
 config.radioMenu = {
-    { title = "Standard",  description = "Standard-Funkanimation",          icon = "fa-solid fa-wave-square",   emote = "wt4"        },
-    { title = "Brust",     description = "Funkanimation über die Brust",    icon = "fa-solid fa-user",            emote = "radiochest" },
-    { title = "Schulter",  description = "Funkanimation über die Schulter", icon = "fa-solid fa-walkie-talkie", emote = "radio"      },
-    { title = "Ohr",       description = "Funkanimation über das Ohrstück", icon = "fa-solid fa-headset",         emote = "phonecall"  },
+    { title = "Standard",  description = "Klassische Funkgeste – Hand am Gürtel",     icon = "wave",    emote = "wt4"        },
+    { title = "Brust",     description = "Funkgerät an der Brust – Polizei & Sicherheit", icon = "user",    emote = "radiochest" },
+    { title = "Schulter",  description = "Handy an der Schulter – klassisches Funken",  icon = "radio",   emote = "radio"      },
+    { title = "Ohr",       description = "Ohrstück-Geste – diskretes Funken",           icon = "headset", emote = "phonecall"  },
 }
 
 -- ═══════════════════════════════════════════════════════════════

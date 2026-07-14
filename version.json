@@ -1,18 +1,16 @@
 {
-    "version": "1.0.4",
+    "version": "1.0.5",
     "download": "https://portal.cfx.re/assets/granted-assets",
     "changelog": [
-        "Change: Automatische Kleidungs-Erkennung vorerst deaktiviert",
-        "Feature: Eigene Custom UI statt ox_lib Menü",
-        "Change: ox_lib wird nur noch für Benachrichtigungen genutzt"
+        "Feature: SVG-Icons statt Emojis in der Custom UI",
+        "Change: UI-Design überarbeitet (Glassmorphism, Animationen, Status-Karten)"
     ],
     "files": [
         "data/config.lua",
         "data/version.lua",
-        "client/main.lua",
-        "fxmanifest.lua",
         "html/index.html",
         "html/style.css",
-        "html/script.js"
+        "html/script.js",
+        "fxmanifest.lua"
     ]
 }

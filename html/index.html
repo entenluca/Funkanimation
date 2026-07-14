@@ -8,41 +8,76 @@
 </head>
 <body>
     <div id="app" class="hidden">
+        <div class="backdrop"></div>
+
         <div class="panel">
+            <div class="panel-glow"></div>
+
             <header class="panel-header">
-                <div class="header-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 8h14l-1 10H6L5 8z"/>
-                        <path d="M9 8V6a3 3 0 0 1 6 0v2"/>
-                        <circle cx="12" cy="13" r="2"/>
-                    </svg>
-                </div>
-                <div class="header-text">
-                    <h1>Funkanimation</h1>
-                    <p>Wähle deine Funk-Geste</p>
+                <div class="brand">
+                    <div class="brand-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="5" y="2" width="14" height="20" rx="3"/>
+                            <circle cx="12" cy="18" r="1.25" fill="currentColor" stroke="none"/>
+                            <path d="M9 6h6M9 9.5h6"/>
+                            <path d="M8 13h2.5a1.5 1.5 0 0 1 0 3H8"/>
+                        </svg>
+                    </div>
+                    <div class="brand-text">
+                        <span class="brand-label">Luis-Werkstatt</span>
+                        <h1>Funkanimation</h1>
+                    </div>
                 </div>
                 <button class="btn-close" id="btn-close" aria-label="Schließen">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
                         <path d="M18 6L6 18M6 6l12 12"/>
                     </svg>
                 </button>
             </header>
 
-            <div class="status-bar">
-                <div class="status-item">
-                    <span class="status-label">Radio</span>
-                    <span class="status-value" id="radio-status">Inaktiv</span>
+            <div class="status-grid">
+                <div class="status-card" id="status-radio">
+                    <div class="status-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4.5 12a7.5 7.5 0 0 1 15 0"/>
+                            <path d="M7.5 12a4.5 4.5 0 0 1 9 0"/>
+                            <circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none"/>
+                        </svg>
+                    </div>
+                    <div class="status-info">
+                        <span class="status-label">Funkstatus</span>
+                        <span class="status-value" id="radio-status">Inaktiv</span>
+                    </div>
+                    <span class="status-dot" id="radio-dot"></span>
                 </div>
-                <div class="status-item">
-                    <span class="status-label">Aktiv</span>
-                    <span class="status-value" id="active-emote">—</span>
+
+                <div class="status-card">
+                    <div class="status-icon accent">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2a3 3 0 0 0-3 3v4a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/>
+                            <path d="M19 11a7 7 0 0 1-14 0"/>
+                            <path d="M12 18v4"/>
+                        </svg>
+                    </div>
+                    <div class="status-info">
+                        <span class="status-label">Animation</span>
+                        <span class="status-value" id="active-emote">—</span>
+                    </div>
                 </div>
+            </div>
+
+            <div class="section-header">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+                <span>Verfügbare Gesten</span>
             </div>
 
             <div class="animation-list" id="animation-list"></div>
 
             <footer class="panel-footer">
-                <span>ESC zum Schließen</span>
+                <kbd>ESC</kbd>
+                <span>Menü schließen</span>
             </footer>
         </div>
     </div>
