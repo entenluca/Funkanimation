@@ -1,12 +1,16 @@
 {
-    "version": "1.1.0",
+    "version": "1.1.1",
     "download": "https://portal.cfx.re/assets/granted-assets",
     "changelog": [
-        "Change: Branding auf made by NoWave aktualisiert"
+        "Change: X-Schließen-Button entfernt",
+        "Feature: UI-Theme in config.lua wählbar (default / yellow)"
     ],
     "files": [
+        "data/config.lua",
+        "client/main.lua",
         "html/index.html",
         "html/style.css",
+        "html/script.js",
         "fxmanifest.lua",
         "data/version.lua"
     ]

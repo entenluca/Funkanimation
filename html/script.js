@@ -4,7 +4,6 @@ const radioStatus = document.getElementById('radio-status');
 const radioDot = document.getElementById('radio-dot');
 const statusRadio = document.getElementById('status-radio');
 const activeEmote = document.getElementById('active-emote');
-const btnClose = document.getElementById('btn-close');
 
 const ICONS = {
     'fa-solid fa-wave-square': `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h2"/><path d="M6 8v8"/><path d="M10 5v14"/><path d="M14 8v8"/><path d="M18 5v14"/><path d="M22 12h-2"/></svg>`,
@@ -98,7 +97,14 @@ function renderAnimations(animations, animate) {
     });
 }
 
+function applyTheme(theme) {
+    const valid = theme === 'yellow' ? 'yellow' : 'default';
+    document.body.classList.remove('theme-default', 'theme-yellow');
+    document.body.classList.add('theme-' + valid);
+}
+
 function openUI(data) {
+    applyTheme(data.theme);
     state.selectedEmote = data.selectedEmote;
     state.radioActive = data.radioActive;
     state.animations = data.animations || [];
@@ -121,8 +127,6 @@ window.addEventListener('message', (event) => {
         updateStatus();
     }
 });
-
-btnClose.addEventListener('click', closeUI);
 
 document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape' && !app.classList.contains('hidden')) {

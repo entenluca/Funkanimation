@@ -13,7 +13,8 @@ body {
     overflow: hidden;
 }
 
-:root {
+:root,
+body.theme-default {
     --bg-overlay: rgba(6, 10, 18, 0.55);
     --panel-bg: rgba(14, 18, 28, 0.96);
     --panel-border: rgba(255, 255, 255, 0.09);
@@ -30,6 +31,23 @@ body {
     --radius-lg: 18px;
     --radius-md: 14px;
     --radius-sm: 10px;
+    --shadow: 0 32px 64px -16px rgba(0, 0, 0, 0.75);
+}
+
+body.theme-yellow {
+    --bg-overlay: rgba(28, 22, 8, 0.55);
+    --panel-bg: rgba(32, 26, 12, 0.96);
+    --panel-border: rgba(255, 220, 120, 0.14);
+    --panel-inner: rgba(255, 220, 120, 0.05);
+    --accent: #e8c547;
+    --accent-soft: #f0d875;
+    --accent-glow: rgba(232, 197, 71, 0.35);
+    --accent-bg: rgba(232, 197, 71, 0.14);
+    --success: #a3e635;
+    --success-glow: rgba(163, 230, 53, 0.35);
+    --text-primary: #fff8e7;
+    --text-secondary: #d4c9a8;
+    --text-muted: #9a8f6e;
     --shadow: 0 32px 64px -16px rgba(0, 0, 0, 0.75);
 }
 
@@ -149,32 +167,6 @@ body {
     color: var(--text-primary);
     letter-spacing: -0.03em;
     line-height: 1.2;
-}
-
-.btn-close {
-    width: 38px;
-    height: 38px;
-    border: 1px solid var(--panel-border);
-    background: var(--panel-inner);
-    border-radius: var(--radius-sm);
-    color: var(--text-secondary);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s ease;
-}
-
-.btn-close:hover {
-    background: rgba(248, 113, 113, 0.12);
-    border-color: rgba(248, 113, 113, 0.35);
-    color: #f87171;
-    transform: rotate(90deg);
-}
-
-.btn-close svg {
-    width: 17px;
-    height: 17px;
 }
 
 /* Status */

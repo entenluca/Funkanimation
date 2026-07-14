@@ -117,6 +117,7 @@ local function openAnimationMenu()
         animations    = config.radioMenu,
         selectedEmote = state.selectedEmote,
         radioActive   = state.isRadioActive,
+        theme         = config.uiTheme or "default",
     })
 end
 
