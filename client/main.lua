@@ -5,19 +5,23 @@ if not config then return end
 local scully, rpemotes, export
 
 CreateThread(function()
-    while true do
+    local waited = 0
+    while waited < 30000 do
         if GetResourceState('rpemotes') == 'started' then
             rpemotes = true
             export   = exports['rpemotes']
-            break
+            print("^2[Funkanimation]^7 Emote-System gefunden: rpemotes")
+            return
         elseif GetResourceState('scully_emotemenu') == 'started' then
             scully = true
             export = exports['scully_emotemenu']
-            break
+            print("^2[Funkanimation]^7 Emote-System gefunden: scully_emotemenu")
+            return
         end
         Wait(1000)
+        waited = waited + 1000
     end
-    print("^2[Funkanimation]^7 Emote-System gefunden: " .. (rpemotes and "rpemotes" or "scully_emotemenu"))
+    print("^1[Funkanimation]^7 Kein Emote-System gefunden! (rpemotes oder scully_emotemenu)")
 end)
 
 local function notify(data)
